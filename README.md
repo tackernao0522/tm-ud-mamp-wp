@@ -67,3 +67,15 @@ Socket	/Applications/MAMP/tmp/mysql/mysql.sock
 + svg形式は追加できないので wp管理画面 => `プラグイン` => `新規追加` => `svg`で検索をかける => `SVG Support` => `今すぐインストール` => `有効化` <br>
 
 + wp管理画面 => `メディア` => `新規追加` => `ファイルを選択` => `svg画像`が選択できるようになっている(適当にsvg画像を選択して) => `開く` => `更新`<br>
+
+## 91. 画像の保存場所と大きさの設定
+
++ `wp-content/uploads/2022/10`の中にアップロードした画像が配置されている<br>
+
++ `投稿` => `投稿を作成しよう` => `右側のブロックを選択` => `画像サイズ` => サイズを選ぶことができる<br>
+
++ wp管理画面 => `設定` => `メディア` => ここで各サイズの本を設定できる<br>
+
++ wp管理画面 => `プラグイン` => `新規追加` => `thumbnail generator`で検索 => `Real Thumbnail Generator: Efficient regeneration of thumbnails in all sizes` => `今すぐインストール` => `有効化`<br>
+
++ wp管理画面 => `メディア` => `Regenarate Thumbnails` => `Bulk regenerate` => `Regenarate all attachments` => `Not now` 作ってきた画像が生成され直す<br>
