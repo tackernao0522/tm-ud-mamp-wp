@@ -108,7 +108,7 @@ class View {
         $slugMarker = 'rtg-regenerator';
         add_submenu_page('upload.php', '', '', 'upload_files', $slugMarker, '', 11);
         $subMenus = &$submenu['upload.php'] ?? [];
-        foreach ($subMenus as &$val) {
+        foreach ((array)$subMenus as &$val) {
             if ($val[2] === $slugMarker) {
                 $val = [__('Regenerate Thumbnails', RTG_TD), 'upload_files', $this->getThumbnailsPageUrl()];
             }
