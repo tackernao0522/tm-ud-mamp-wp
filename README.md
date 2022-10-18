@@ -447,3 +447,7 @@ add_filter('wp_trim_excerpt', 'new_excerpt_more');
 + `その他アーカイブ`のところはデフォルトで`はい`が選択されているのでそのままでよいと思う<br>
 
 + これらの設定は状況に応じて設定すれば良いがSEOは専門的知識がないと難しい<br>
+
+参考: [エラー処理](https://www.momosiri.info/cms/foreach-warning/) <br>
+
+

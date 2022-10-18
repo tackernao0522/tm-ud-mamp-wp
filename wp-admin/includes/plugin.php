@@ -1898,7 +1898,7 @@ function get_admin_page_parent( $parent = '' ) {
 	}
 
 	foreach ( array_keys( (array) $submenu ) as $parent ) {
-		foreach ( $submenu[ $parent ] as $submenu_array ) {
+		foreach ( (array)$submenu[ $parent ] as $submenu_array ) {
 			if ( isset( $_wp_real_parent_file[ $parent ] ) ) {
 				$parent = $_wp_real_parent_file[ $parent ];
 			}
