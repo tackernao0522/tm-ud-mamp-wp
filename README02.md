@@ -197,3 +197,64 @@ body {
 
 + 使用していないテーマも削除しておく<br>
 
+## 118. Twenty Twenty-Oneでブログを構築しよう③
+
++ wp管理画面 => `投稿` => `新規追加` => `タイトルを追加` => `ブログを開設しました`を入力してみる => 本文に `よろしくお願いします`と入力してみる => `公開` => `公開` => TOPページを表示してみる<br>
+
++ TOPページのタイトルの`ブログを開設しました`と`Hello world!`を見比べてみると日本語の方が大きく表示されているように見える(詳細ページで見比べるとよくわかる)<br>
+
++ `ブログを開設しました`の詳細画面のヘッダーにある`カスタマイズ`をクリック => `サイト基本情報` => そのままで良い(下記へ続く)<br>
+
++ `色とダークモード` => `背景色`を白にしておく => `ダークモード対応`にチェックを入れる(下記へ続く)<br>
+
++ `背景画像` => 今回は特に設定しない(下記へ続く)<br>
+
++ `メニュー` => 後ほど(下記へ続く)<br>
+
++ `ウィジェット` => 好みでよいが検索だけ一番後ろに持っていく => コメントも今回削除してみる(下記へ続く)<br>
+
++ `ホームーページ設定` => ブログの場合このままでよい(下記へ続く)<br>
+
++ `抜粋の設定` => このままでよい(下記へ続く)<br>
+
++ `追加 CSS` => `ブログを開設しました`のフォントサイズを調整したいのでこの部分を検証ツールで確認して下記のCSSを記述する => `コメントする`のフォントも大きいので調整する => カスタマイズ設定画面から`たかちゃんブログ。`をクリックして一覧に戻ったときのタイトル名のフォント調節したい => `公開`
+
+```css:sample.css
+.singular .entry-title {
+	font-size: 26px;
+	text-align: center;
+}
+
+.comments-title, .comment-reply-title {
+	font-size: 18px;
+}
+
+.entry-title {
+	font-size: 24px;
+}
+```
+
++ `ブログを開設しました`の投稿編集画面 => `⚙` => `投稿` => `アイキャッチ画像を設定` => `適当な画像を設定する` => `アイキャッチ画像を設定` => `更新` => TOPページを表示してみる<br>
+
++ TOPページヘッダーから`カスタマイズ` => `追加 CSS` => 下記を記述してみる => `公開` => TOPページを確認してみる<br>
+
+```css:sample.css
+.singular .entry-title {
+	font-size: 26px;
+	text-align: center;
+}
+
+.comments-title, .comment-reply-title {
+	font-size: 18px;
+}
+
+.entry-title {
+	font-size: 24px;
+}
+
+.entry-header .post-thumbnail, .singular .post-thumbnail, .alignfull [class*=inner-container] > .alignwide, .alignwide [class*=inner-container] > .alignwide {
+	width: 600px;
+}
+```
+
+### 完<br>
